@@ -8,7 +8,7 @@ export function Home(){
     return (
         <>
             <View style={styles.container}>
-                <Text>Sorteador de Equipes</Text>
+                <Text>Teste</Text>
                     
             </View>
 
