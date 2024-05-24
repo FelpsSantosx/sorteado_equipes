@@ -1,10 +1,41 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Text } from "react-native"
 
 export const styles = StyleSheet.create({
-    container: {
-        flex:1
+
+    home: {
+        flex: 1,
+        backgroundColor: '#01204E',
+
     },
-    botao:{
+
+    image: {
+        width: 200,
+        height: 200,
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        marginTop: 70,
+    },
+
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+
+
+    },
+
+    botao: {
+        marginBottom: 50,
         backgroundColor: '#000'
+    },
+
+    containerBtn: {
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+
+    text: {
+        color: '#fff',
+        fontSize: 30
     }
 })

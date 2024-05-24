@@ -1,23 +1,29 @@
-import { View, Text, ViewBase, Button } from "react-native";
+import { View, Text, ViewBase, Button, Image } from "react-native";
 
 
 import { styles } from "./style";
 import { Header } from "react-native/Libraries/NewAppScreen";
 
-export function Home(){
+export function Home() {
     return (
         <>
-            <View style={styles.container}>
-                <Text>Sorteado de Equipes</Text>
-                    
-            </View>
-
-            <View style={styles.botao}>
-                <Button 
-                    color={'#000'}
-                    onPress={Header}
-                    title="Click me!" 
-                />
+            <View style={styles.home}>
+                <View style={styles.container}>
+                    <Text style={styles.text}>Sorteado de Equipes</Text>
+                    <Image
+                        source={require('@/assets/images/Codigo.png')}
+                        style={styles.image}
+                    />
+                </View>
+                <View style={styles.containerBtn}>
+                    <View style={styles.botao}>
+                        <Button
+                            color={'#000'}
+                            onPress={Header}
+                            title="Vamos Começar!!"
+                        />
+                    </View>
+                </View>
             </View>
         </>
     )
