@@ -1,6 +1,12 @@
-import React from "react";
-import { Home } from "@/components/Home/home"
+import * as React from 'react';
+import { Home } from '@/components/Home/home';
 
-export default function index(){
-    return <Home />
-}
+
+
+const App = () => {
+  return (
+    <Home></Home>
+  )
+};
+
+export default App;

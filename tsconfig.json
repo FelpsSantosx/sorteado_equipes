@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/routes.js", "app/index.tsx", "src/HomeScreen.js", "components/Home/home.tsx"  ]
 }

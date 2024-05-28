@@ -1,41 +1,46 @@
-import { StyleSheet, Text } from "react-native"
+import { StyleSheet} from "react-native"
 
 export const styles = StyleSheet.create({
+    boxImput:{
+        flexDirection: 'row',
+        borderColor: '#000',
+        gap: 10,
 
+    },
+    imput:{
+        width: '70%',
+        color:'#000',
+        backgroundColor: '#FFF',
+        borderRadius: 8,
+        padding: 10,
+        justifyContent:'center',
+        alignItems:'center'
+    },
     home: {
         flex: 1,
         backgroundColor: '#01204E',
-
+        alignItems:'center',
+        gap: 50
     },
-
-    image: {
-        width: 200,
-        height: 200,
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        marginTop: 70,
+    
+    boxText: {
+        marginTop: 100,
     },
-
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-
-
-    },
-
+    
     botao: {
-        marginBottom: 50,
-        backgroundColor: '#000'
+        backgroundColor: '#888',
+        borderRadius: 8,
+        fontWeight: 'bold',
     },
-
-    containerBtn: {
-        justifyContent: 'flex-end',
-        alignItems: 'center',
+    
+    textBtn: {  
+        fontSize: 30,
+        paddingHorizontal:15,
+        paddingVertical:4,
     },
-
     text: {
         color: '#fff',
-        fontSize: 30
+        fontSize: 40,
+        fontWeight: 'bold',
     }
 })
