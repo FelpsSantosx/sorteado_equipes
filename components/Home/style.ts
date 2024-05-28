@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
 
     },
     imput:{
-        width: '70%',
+        width: '80%',
         color:'#000',
         backgroundColor: '#FFF',
         borderRadius: 8,
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     
     botao: {
         backgroundColor: '#888',
-        borderRadius: 8,
+        borderRadius: 5,
         fontWeight: 'bold',
     },
     
@@ -42,5 +42,23 @@ export const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 40,
         fontWeight: 'bold',
+    },
+    boxMembros:{
+        backgroundColor: 'rgba(255,255,255,0.5)',
+        width: "60%",
+        gap: 8,
+        borderRadius: 5,
+        padding: 20,
+       
+    },
+    membros: {
+        backgroundColor: 'rgba(255,255,255,1)',
+        color:'#000',
+        padding: 10,
+        borderRadius: 5,
+    },
+    qntMembros:{
+      textAlign: 'center' 
     }
+
 })
