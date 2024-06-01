@@ -9,18 +9,21 @@ const arrMembros = Array();
 
 // NÃO ESTOU CONSEGUINDO FAZER USO NO NAVIGATION, ESTÁ APONTANDO ERROR NESSA LINHA 9 (TESTA!!)
 export function Home() { 
-    const [capturedText, setCapturedText] = React.useState('');
     const [inputText, setInputText] = React.useState('Exemplo');
     
     const handleCapture = () => {
-        setCapturedText(inputText);
-        if (capturedText != '') {
-            arrMembros.push(capturedText)
+        let palavra = inputText
+        if (palavra != '') {
+            arrMembros.push(palavra)
         }
         setInputText('')
     };
+   
+    
     
     return (
+        <>
+        
             <View style={styles.home}>
             
                 <View style={styles.boxText}>
@@ -48,10 +51,16 @@ export function Home() {
                     
                 </View>
 
-                
-                
+            
+
+            <View   style={styles.boxText}>
+                <Text  style={styles.text}>
+                    Deseja fazer o sorteio de {arrMembros.length} nomes ?
+                </Text>
             </View>
-        
+ 
+            </View>
+        </>
     );
 }
 
