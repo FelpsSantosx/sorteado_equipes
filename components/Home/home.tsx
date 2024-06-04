@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { View, Text, TextInput, SafeAreaView, TouchableOpacity } from "react-native";
 
-import { styles } from "./style";
+import { styleHome } from "./style";
 
 
 
-const arrMembros = Array();
+export const arrMembros = Array();
 
 // NÃO ESTOU CONSEGUINDO FAZER USO NO NAVIGATION, ESTÁ APONTANDO ERROR NESSA LINHA 9 (TESTA!!)
 export function Home() { 
@@ -24,40 +24,34 @@ export function Home() {
     return (
         <>
         
-            <View style={styles.home}>
+            <View style={styleHome.home}>
             
-                <View style={styles.boxText}>
-                    <Text style={styles.text}>Sorteado de Equipe</Text>
+                <View style={styleHome.boxText}>
+                    <Text style={styleHome.text}>Sorteado de Equipe</Text>
                 </View>
                 
-                <SafeAreaView style={styles.boxImput}>
-                <TextInput style={styles.imput}
+                <View style={styleHome.boxImput}>
+                <TextInput style={styleHome.imput}
                     placeholder='Participantes'
                     value={inputText}
                     onChangeText={setInputText}
                 />
 
 
-                <TouchableOpacity style={styles.botao} onPress={handleCapture}>
-                    <Text style={styles.textBtn}>+</Text>
+                <TouchableOpacity style={styleHome.botao} onPress={handleCapture}>
+                    <Text style={styleHome.textBtn}>+</Text>
                 </TouchableOpacity>
-                </SafeAreaView>
+                </View>
 
-                <View style={styles.boxMembros}>
+                <View style={styleHome.boxMembros}>
                     {arrMembros.map((name, index) => (
-                        <Text key={index} style={styles.membros}>{name}</Text>
+                        <Text key={index} style={styleHome.membros}>{name}</Text>
                     ))}
-                    <Text style={styles.qntMembros} >{arrMembros.length}</Text>
+                    <Text style={styleHome.qntMembros} >{arrMembros.length}</Text>
                     
                 </View>
 
-            
-
-            <View   style={styles.boxText}>
-                <Text  style={styles.text}>
-                    Deseja fazer o sorteio de {arrMembros.length} nomes ?
-                </Text>
-            </View>
+        
  
             </View>
         </>
