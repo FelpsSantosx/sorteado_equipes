@@ -9,7 +9,7 @@ export const arrMembros = Array();
 
 // NÃO ESTOU CONSEGUINDO FAZER USO NO NAVIGATION, ESTÁ APONTANDO ERROR NESSA LINHA 9 (TESTA!!)
 export function Home() { 
-    const [inputText, setInputText] = React.useState('Exemplo');
+    const [inputText, setInputText] = React.useState('');
     
     const handleCapture = () => {
         let palavra = inputText

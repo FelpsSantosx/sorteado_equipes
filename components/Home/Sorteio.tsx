@@ -48,13 +48,13 @@ export function Sorteio(){
             {/* Titulo */}
             <Text style={styleSorteio.titulo}> Deseja fazer o sorteio de {arrMembros.length} nomes ?</Text>
             
+
             {/* Botao Sortear */}
             <View style={styleSorteio.boxBtnSort}>
                 <TouchableOpacity style={styleSorteio.BtnSort} onPress={sortear}>
                     <Text style={styleSorteio.txtBtn}>Dividir em 2</Text>
                 </TouchableOpacity>
             </View>
-
              {/* Quadro de Equipes */}
             <View style={styleSorteio.boxEquipe}>
 

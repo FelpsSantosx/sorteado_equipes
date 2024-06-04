@@ -25,7 +25,7 @@ export const styleHome = StyleSheet.create({
         padding:10,
         backgroundColor: 'rgba(0, 103, 0, 0.3)',
         
-        marginTop: 100,
+        marginTop: 70,
     },
     
     botao: {
